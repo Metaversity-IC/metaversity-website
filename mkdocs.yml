@@ -1,6 +1,31 @@
-site_name: My Docs
+site_name: Metaversity
 
 theme:
   name: material
   custom_dir: overrides
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+  palette:
+    scheme: dracula
+extra_css:
+  - css/extra.css
 
+nav:
+  - "SciEcon": sciecon.md
+  - "Team": team.md
+  - "Projects & Publications":
+      - projects/overview.md
+      - "Metaversity": projects/metaversity.md
+      - "OER":
+          - "Overview": projects/OER/overview.md
+          - "OER 1: Innovate on the Internet Computer": projects/OER/OER1.md
+          - "OER 2: Intelligent Economics: An Explainable Approach": projects/OER/OER2.md
+
+markdown_extensions:
+  - meta
+  
